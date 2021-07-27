@@ -6,6 +6,8 @@
     --grayishBlue: hsl(218, 22%, 67%);
 
     --fontFamily: 'Karla', sans-serif;
+
+    --borderRadius: 0.5rem;
 }
 
 
@@ -21,36 +23,116 @@ html {
   /* Globals */
   body {
     background: var(--gray);
-    font-size: 1.6rem;
-    line-height: 1.5;
     font-family: var(--fontFamily);
-  }
-
-
-  .container {
-     
-      max-width: 50rem;
-      margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .grid {
+    max-width: 48rem;
     display: grid;
-    grid-template-columns: minmax(100vw, 1fr);
-    grid-template-rows: minmax(100vh, 1fr);
-    align-items: center;
-    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    padding: 4rem;
-    border: none;
 
   }
-
-
+  
   .join {
     grid-column: 1 / 3;
+    background-color: white;
+    line-height: 1.5;
+    padding: 2rem;
+    border-top-left-radius: var(--borderRadius);
+    border-top-right-radius: var(--borderRadius);
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--cyan);
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    font-weight: 700;
+    
+  }
+  h3 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    margin-top: 0;
+    width: 100%;
+  }
+  p {
+    font-size: 1.2rem;
+    color: var(--grayishBlue);
+    font-weight: 700;
+    margin: 0 auto;
+  }
+
+  .monthly {
+    background-color: var(--cyan);
+    line-height: 1.5;
+    padding: 3rem;
+    border-bottom-left-radius: var(--borderRadius);
+  }
+
+  .monthly-h2 {
+      font-size: 1.5rem;
+      color:white;
+      font-weight: 300;
+      margin-top: 0;
+  }
+
+  .montly-price {
+      font-size: 3rem;
+      margin-top: -1rem;
+      margin-bottom: 0;
+      color:white;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+  }
+
+  .montly-price span {
+      font-size: 1rem;
+      color:white;
+      font-weight: 300;
+      margin-left: 1rem;
   }
 
 
-  h1, h2, h3 {
-    font-size: 1.6rem;
-  }
+
+.button {
+  background-color: var(--yellow);
+  border: none;
+  border-radius: .5rem;
+  color: white;
+  width: 100%;
+  box-shadow: 0 .1rem 10px .1rem rgb(119, 119, 119);
+  font-size: 16px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.whyus {
+  background-color: var(--cyan);
+  opacity: 0.7;
+  line-height: 1.5;
+  padding: 3rem;
+  border-bottom-right-radius: var(--borderRadius);
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5;
+    color: hsla(204, 43%, 93%, 0.8);
+    margin-bottom: 0;
+}
+
+.attribution {
+  margin-top: 2rem;
+}
