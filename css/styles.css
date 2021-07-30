@@ -77,6 +77,35 @@ html {
     border-top-right-radius: var(--borderRadius);
   }
 
+  @media (max-width: 440px ) {
+    .grid {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35rem;
+  }
+
+    .grid .join {
+      margin-top: 15rem;
+
+    }
+    .grid .monthly {
+      border-bottom-left-radius: 0;
+      width: 100%;
+    }
+    .grid .whyus {
+      border-bottom-left-radius: var(--borderRadius);
+      width: 100%;  
+    }
+
+    .attribution {
+      padding-top: 7rem;
+    }
+
+  }
+
   .monthly {
     background-color: var(--cyan);
     line-height: 1.5;
